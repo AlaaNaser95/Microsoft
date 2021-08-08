@@ -78,16 +78,16 @@ class Provider extends AbstractProvider
             'email'    => $user['userPrincipalName'],
             'avatar'   => null,
 
-            'businessPhones'    => $user['businessPhones'],
-            'displayName'       => $user['displayName'],
-            'givenName'         => $user['givenName'],
-            'jobTitle'          => $user['jobTitle'],
-            'mail'              => $user['mail'],
-            'mobilePhone'       => $user['mobilePhone'],
-            'officeLocation'    => $user['officeLocation'],
-            'preferredLanguage' => $user['preferredLanguage'],
-            'surname'           => $user['surname'],
-            'userPrincipalName' => $user['userPrincipalName'],
+            'businessPhones'    => $user['businessPhones'] ?? '',
+            'displayName'       => $user['displayName'] ?? '',
+            'givenName'         => $user['givenName'] ?? '',
+            'jobTitle'          => $user['jobTitle'] ?? '',
+            'mail'              => $user['mail'] ?? '',
+            'mobilePhone'       => $user['mobilePhone'] ?? '',
+            'officeLocation'    => $user['officeLocation'] ?? '',
+            'preferredLanguage' => $user['preferredLanguage'] ?? '',
+            'surname'           => $user['surname'] ?? '',
+            'userPrincipalName' => $user['userPrincipalName'] ?? '',
         ]);
     }
 
